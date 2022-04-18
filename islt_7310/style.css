@@ -1,6 +1,25 @@
 #heading {
     
-    color: cyan;
+    color: #5CE0D8;
     
     
+}
+
+#first::first-letter {
+    font-size: 200%;
+    color: #5CE0D8;
+  }
+
+body {
+    background-color;: #01345B
+}
+
+p {
+    text-indent: 10px;
+}
+
+#reflectionDiv {
+    margin: 20px;
+    padding: 20px;
+    display: block;
 }
