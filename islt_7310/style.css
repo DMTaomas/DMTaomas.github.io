@@ -1,3 +1,12 @@
+
+@font-face { 
+
+font-family: Barlow; 
+
+src: url("BarlowCondensed-Regular.ttf"); 
+
+}
+
 #heading {
     
     color: #5CE0D8;
@@ -16,6 +25,7 @@ body {
 
 p {
     text-indent: 10px;
+    font-family: Barlow, Arial, Helvetica, sans-serif;
 }
 
 #reflectionDiv {
