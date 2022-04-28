@@ -1,11 +1,11 @@
-
 @font-face { 
 
-font-family: Barlow; 
+    font-family: Barlow; 
+    
+    src: url("BarlowCondensed-Regular.ttf"); 
+    
+    }
 
-src: url("BarlowCondensed-Regular.ttf"); 
-
-}
 
 #heading {
     
@@ -32,4 +32,19 @@ p {
     margin: 20px;
     padding: 20px;
     display: block;
+}
+
+@media print {
+    h1, p, blockquote, footer 
+    font {
+        color: black;
+        font-style: serif;
+    }
+    p {
+        font-family: Barlow;
+    }
+    body {
+        margin: 1in;
+    }
+
 }
