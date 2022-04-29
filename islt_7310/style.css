@@ -26,6 +26,7 @@ body {
 p {
     text-indent: 10px;
     font-family: Barlow, Arial, Helvetica, sans-serif;
+    color: azure;
 }
 
 #reflectionDiv {
@@ -34,12 +35,28 @@ p {
     display: block;
 }
 
-@media print {
-    h1, p, blockquote, footer 
-    font {
-        color: black;
-        font-style: serif;
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 750px) {
+    blockquote {
+        font-size: small;
+    } 
+    p {
+        font-size: x-small;
     }
+
+}
+
+@media print {
+    h1, p, blockquote, footer {
+        font-family: serif; 
+        color: black;
+        }
+    
+    
     p {
         font-family: Barlow;
     }

@@ -1,4 +1,6 @@
 ul {
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -31,4 +33,12 @@ ul {
   
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+  @media screen and (max-width:750px) {
+    .navbar li a {
+      float: none;
+      width: 100%;
+    }
+
   }
