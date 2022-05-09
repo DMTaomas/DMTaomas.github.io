@@ -1,6 +1,6 @@
 <!--
     Name: Thomas Semkiw
-    Date: 4/17/22
+    Date: 5/8/22
     Pawprint: tas7b9
     Purpose: Landing page for my portfolio website.
 -->
@@ -14,30 +14,34 @@
 
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
+               <link rel="shortcut icon" type="image/x-icon" href="hello.ico">
+               <script src="https://kit.fontawesome.com/867e0852bc.js" crossorigin="anonymous"></script>
                <title>Homepage</title> 
 </head>
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href=index.html>Home</a></li>
-            <li><a href=about.html>About</a></li>
-            <li class="dropdown"><a href=#project.html>Projects</a>
-                <div class="dropdown-content">
-                <ul>
-                    <li>Link 1</li>
-                    <li>Link 2</li>
-                    <li>Link 3</li>
-                </ul>
-                </div>
-            </li>
-            <li><a href=reflection.html>Reflection</a></li>
-            <li><a href=#contact.html>Contact</a></li>
+            
+                <li><a href=index.html>Home</a></li>
+                <li><a href=about.html>About</a></li>
+                <li><div class="dropdown">
+                    <button class="dropbtn" onclick="window.location.href='/project.html';">Projects
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                    <ul class="dropdown-content">
+                        <li><a href="#project1">Link 1</a></li>
+                        <li><a href="#project2">Link 2</a></li>
+                        <li><a href="#project3">Link 3</a></li>
+                    </ul>
+                </div></li>
+                <li><a href=reflection.html>Reflection</a></li>
+            
         </ul>
     
     </nav>
     <header>
-        <h1 id="heading">Thomas Semkiw</h1>
-        <h6>An introduction</h6>
+        <h1 class="heading">Thomas Semkiw</h1>
+        <h6 class="heading">An introduction</h6>
     </header>
 
     <main>
@@ -54,7 +58,10 @@
     
     <footer>
         <p>Author: Thomas Semkiw</p>
+        <i class="fa-solid fa-envelope"></i>
         <p><a href="mailto:tas7b9@umsystem.edu">tas7b9@umsystem.edu</a></p>
+        <i class="fa-solid fa-phone"></i>
+        <p>1-888-888-8888</p>
       </footer>
 </body>
 

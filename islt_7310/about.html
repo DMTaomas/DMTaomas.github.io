@@ -1,7 +1,7 @@
 
 <!--
     Name: Thomas Semkiw
-    Date: 4/17/22
+    Date: 5/8/22
     Pawprint: tas7b9
     Purpose: This page is educational, meant to gain experience in writing HTML
 -->
@@ -16,20 +16,34 @@
         <link rel="stylesheet" href="nav.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="shortcut icon" type="image/x-icon" href="hello.ico">
+               <script src="https://kit.fontawesome.com/867e0852bc.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav class="navbar">
             <ul>
-                <li><a href=index.html>Home</a></li>
-                <li><a href=about.html>About</a></li>
+                
+                    <li><a href=index.html>Home</a></li>
+                    <li><a href=about.html>About</a></li>
+                    <li><div class="dropdown">
+                        <button class="dropbtn" onclick="window.location.href='/project.html';">Projects
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                        <ul class="dropdown-content">
+                            <li><a href="#project1">Link 1</a></li>
+                            <li><a href="#project2">Link 2</a></li>
+                            <li><a href="#project3">Link 3</a></li>
+                        </ul>
+                    </div></li>
+                    <li><a href=reflection.html>Reflection</a></li>
+                
             </ul>
         </nav>
-        <h1>Thomas Semkiw</h1>
+        
         
         <main>
 
-        <h3>About Me</h3>
+        <h3 class="heading">About Me</h3>
 
         <p>Hello! My name is <em>Thomas Semkiw</em>, I'm a student at the <strong>University of Missouri</strong> in my final year. I was born in Michigan, but have been living in Columbia for 14 years or so. 
             Originally, I was in school for political science, but after a gap semester about three years ago I changed to studying IT.<br><br> So far, I've enjoyed Database and VR development classes the most, but am excited about this front-end development class! I've done some front end work in the past for school and other personal projects.
@@ -40,7 +54,10 @@
         </main>
         <footer>
             <p>Author: Thomas Semkiw</p>
+            <i class="fa-solid fa-envelope"></i>
             <p><a href="mailto:tas7b9@umsystem.edu">tas7b9@umsystem.edu</a></p>
+            <i class="fa-solid fa-phone"></i>
+            <p>1-888-888-8888</p>
           </footer>
     </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- 
     Name: Thomas Semkiw
-    Date: 4/17/22
+    Date: 5/8/22
     Purpose: Project page
 -->
 
@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="nav.css">
         <title>Project</title>
+        <link rel="shortcut icon" type="image/x-icon" href="hello.ico">
+               <script src="https://kit.fontawesome.com/867e0852bc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,16 +23,54 @@
         <ul>
             <li><a href=index.html>Home</a></li>
             <li><a href=about.html>About</a></li>
-            <li><a href=#project.html>Projects</a>
-                <ul>
-                    <li>Link 1</li>
-                    <li>Link 2</li>
-                    <li>Link 3</li>
+        <li><div class="dropdown">
+                <button class="dropbtn" onclick="window.location.href='/project.html';">Projects
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                <ul class="dropdown-content">
+                    <li><a href="#project1">Link 1</a></li>
+                    <li><a href="#project2">Link 2</a></li>
+                    <li><a href="#project3">Link 3</a></li>
                 </ul>
-            </li>
+            </div></li>
+            <li><a href=reflection.html>Reflection</a></li>
         </ul>
 
 </nav>
+    <header>
+        <h3 class="heading">Projects</h3>
+    </header>
+    <main>
+        <div id="project1" class="flex-divs">
+            <p class="proj-img">First project is a video created for the Missouri bicentennial celebration. 
+                It was created using Adobe After Effects, using 3D camera techniques to create 
+                interesting visual effects.
+            </p>
+            <img class="proj-img" src="Project1.png" alt="Missouri Bicentennial Celebration">
+        </div>
+        <div id="project2" class="flex-divs">
+            <p class="proj-img">The second project is a personal project worked on in my free time. 
+                This Adobe After Effects project uses camera tracking to create a "follow flight",
+                 making a line that follows a disc through the air. This technique is a common one in 
+                 modern disc golf coverage. 
+            </p>
+            <img class="proj-img" src="Project2.png" alt="FollowFlight">
+
+        </div>
+        <div id="project3" class="flex-divs">
+            <p class="proj-img">The third project is like the second, another Follow Flight. 
+                This video uses the same techniques: Compositing, Camera Tracking, etc. 
+            </p>
+            <img class="proj-img" src="Project3.png" alt="FollowFlight">
+        </div>
+    </main>
+    <footer>
+        <p>Author: Thomas Semkiw</p>
+        <i class="fa-solid fa-envelope"></i>
+        <p><a href="mailto:tas7b9@umsystem.edu">tas7b9@umsystem.edu</a></p>
+        <i class="fa-solid fa-phone"></i>
+        <p>1-888-888-8888</p>
+    </footer>
 </body>
 
 </html>
