@@ -27,11 +27,12 @@ body {
     background-size: cover;
 }
 
-p, blockquote {
+p, blockquote, label, caption, a {
     text-indent: 10px;
     font-family: Barlow, Arial, Helvetica, sans-serif;
     color: azure;
 }
+
 
 #reflectionDiv {
     margin: 20px;
@@ -64,7 +65,29 @@ footer {
     align-items: center;
     padding: 5px;
 }
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    font-family: Barlow, Arial, Helvetica, sans-serif;
+    color: azure;
+    
 
+  }
+  /* tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+  
+  th:nth-child(even),td:nth-child(odd) {
+    background-color: rgba(150, 212, 212, 0.4);
+  } */
+  th {
+      background-color: grey;
+  }
+  tbody>:nth-child(2) {
+    background-color: grey;
+  }
+
+ 
 @media screen and (max-width: 750px) {
     blockquote {
         font-size: small;
@@ -75,6 +98,47 @@ footer {
     .flex-divs {
         flex-direction: column;
     }
+    img {
+        height: 50vh;
+        width: 100vw;
+    }
+    /* .navbar {
+        width: 100vw;
+    } */
+    .navbar ul {
+        display: block;
+    }
+    .navbar ul li {
+        display: block;
+
+    }
+
+    /* .navbar ul li ul {
+        width: 100%;
+        z-index: 1;
+    }
+    .navbar ul li ul li {
+        display: block;
+        float: left;
+
+    } */
+    table, table {
+        display: flex;
+        flex-direction: column;
+        padding: 3px;
+        text-align: center;
+        overflow-x: auto;
+        
+    }
+    th {
+        min-width: 110px;
+    }
+    iframe {
+        max-width: 175px;
+        max-height: 175px;
+        align-items: center;
+    }
+
 }
 
 @media print {

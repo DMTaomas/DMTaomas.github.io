@@ -1,11 +1,3 @@
-<!--
-    Name: Thomas Semkiw
-    Date: 5/8/22
-    Pawprint: tas7b9
-    Purpose: Landing page for my portfolio website.
--->
-
-
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -16,7 +8,7 @@
                <link rel="stylesheet" href="nav.css">
                <link rel="shortcut icon" type="image/x-icon" href="hello.ico">
                <script src="https://kit.fontawesome.com/867e0852bc.js" crossorigin="anonymous"></script>
-               <title>Homepage</title> 
+               <title>Projects</title> 
 </head>
 <body>
     <nav class="navbar">
@@ -41,22 +33,27 @@
     
     </nav>
     <header>
-        <h1 class="heading">Thomas Semkiw</h1>
-        <h6 class="heading">An introduction</h6>
+        <h3 class="heading">Contact</h3>
     </header>
 
     <main>
-        <p>The purpose of this page is to create a professional portfolio for myself. As I’m nearing the end of my 
-            (formal) educational career, I’ll need tools to market myself to potential employers. This website will act 
-            as a portal for said employers to look through my achievements and get an idea of who I am. Initially, 
-            the website will introduce users with an introductory page. Then, they will get an introduction to who I 
-            am; Details about my degree, place of education, and some other personal information. After the 
-            introductory pages, we’ll go into a projects/experiences page. Finally, an overarching goals/philosophy 
-            page will tie everything together, connecting my past learning experiences to how I will use them in 
-            future settings. A contact page with personal information will be present at the end.  </p>
+        <form action="mailto:tas7b9@umsystem.edu?Subject=Portfolio%20Website%20Contact" method="post" enctype="text/plain">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Jan" required autofocus><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Doe" required><br><br>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" placeholder="email@email.com" required><br><br>
+            <label for="message">Message:</label>
+            <input type="text" id="message" name="message" placeholder="Hello!" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+
 
     </main>
-    
+
+
     <footer>
         <p>Author: Thomas Semkiw</p>
         <i class="fa-solid fa-envelope"></i>
