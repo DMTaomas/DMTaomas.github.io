@@ -31,6 +31,12 @@ p, blockquote, label, caption, a {
     text-indent: 10px;
     font-family: Barlow, Arial, Helvetica, sans-serif;
     color: azure;
+    
+    
+}
+p, blockquote, caption {
+    font-size: large;
+    margin: 10px;
 }
 
 
@@ -70,6 +76,7 @@ table, th, td {
     border-collapse: collapse;
     font-family: Barlow, Arial, Helvetica, sans-serif;
     color: azure;
+    padding: 10px;
     
 
   }
@@ -81,10 +88,10 @@ table, th, td {
     background-color: rgba(150, 212, 212, 0.4);
   } */
   th {
-      background-color: grey;
+      background-color: rgba(112, 128, 144, 0.479);
   }
   tbody>:nth-child(2) {
-    background-color: grey;
+    background-color: rgba(112, 128, 144, 0.479);
   }
 
  

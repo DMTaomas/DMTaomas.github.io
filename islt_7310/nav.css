@@ -14,8 +14,11 @@ ul {
 
   li a {
     display: block;
-    padding: 8px
+    padding: 8px;
+    color: darkblue;
 }
+
+  
 
 /* .dropdown {
     position: relative;
@@ -63,10 +66,11 @@ ul {
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
-  padding: 14px 16px;
+  color: darkblue;
+  padding: 8px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
+  font-family: Barlow, Arial, Helvetica, sans-serif; /* Important for vertical align on mobile phones */
+  text-decoration: underline;
   margin: 0; /* Important for vertical align on mobile phones */
 }
 

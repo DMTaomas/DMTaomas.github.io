@@ -24,7 +24,7 @@
             <li><a href=index.html>Home</a></li>
             <li><a href=about.html>About</a></li>
         <li><div class="dropdown">
-                <button class="dropbtn" onclick="window.location.href='/project.html';">Projects
+                <button class="dropbtn" onclick="window.location.href='project.html';">Projects
                     <i class="fa fa-caret-down"></i>
                   </button>
                 <ul class="dropdown-content">
@@ -38,6 +38,25 @@
         </ul>
 
 </nav>
+<script LANGUAGE="JavaScript">
+            
+            
+    //Bread crumb script - Kevin Lynn Brown
+    //Duplicate directory names bug fix by JavaScriptKit.com
+    //Visit JavaScript Kit (http://javascriptkit.com) for script
+    
+    var path = "";
+    var href = document.location.href;
+    var s = href.split("/");
+    for (var i=2;i<(s.length-1);i++) {
+    path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+s[i]+"</A> / ";
+    }
+    i=s.length-1;
+    path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
+    var url = window.location.protocol + "//" + path;
+    document.writeln(url);
+    
+    </script>
     <header>
         <h3 class="heading">Projects</h3>
     </header>

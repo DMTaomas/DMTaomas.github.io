@@ -20,19 +20,20 @@
                <script src="https://kit.fontawesome.com/867e0852bc.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <header>
         <nav class="navbar">
             <ul>
                 
                     <li><a href=index.html>Home</a></li>
                     <li><a href=about.html>About</a></li>
                     <li><div class="dropdown">
-                        <button class="dropbtn" onclick="window.location.href='project.html';">Projects
+                        <button class="dropbtn navbutton" onclick="window.location.href='project.html';">Projects
                             <i class="fa fa-caret-down"></i>
                           </button>
                         <ul class="dropdown-content">
-                            <li><a href="#project1">Link 1</a></li>
-                            <li><a href="#project2">Link 2</a></li>
-                            <li><a href="#project3">Link 3</a></li>
+                            <li><a href="/islt_7310/project.html#project1">Link 1</a></li>
+                        <li><a href="/islt_7310/project.html#project2">Link 2</a></li>
+                        <li><a href="/islt_7310/project.html#project3">Link 3</a></li>
                         </ul>
                     </div></li>
                     <li><a href=reflection.html>Reflection</a></li>
@@ -40,8 +41,29 @@
                 
             </ul>
         </nav>
+        <script LANGUAGE="JavaScript">
+            
+            
+            //Bread crumb script - Kevin Lynn Brown
+            //Duplicate directory names bug fix by JavaScriptKit.com
+            //Visit JavaScript Kit (http://javascriptkit.com) for script
+            
+            var path = "";
+            var href = document.location.href;
+            var s = href.split("/");
+            for (var i=2;i<(s.length-1);i++) {
+            path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+s[i]+"</A> / ";
+            }
+            i=s.length-1;
+            path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
+            var url = window.location.protocol + "//" + path;
+            document.writeln(url);
+            
+            </script>
+            
+            
         
-        
+        </header>
         <main>
 
         <h3 class="heading">About Me</h3>
@@ -88,6 +110,7 @@
             <p><a href="mailto:tas7b9@umsystem.edu">tas7b9@umsystem.edu</a></p>
             <i class="fa-solid fa-phone"></i>
             <p>1-888-888-8888</p>
+            <p>This free script provided by <a href="http://javascriptkit.com">JavaScript Kit</a></p>
           </footer>
     </body>
 </html>
