@@ -5,9 +5,13 @@
         <meta charset="UTF-8">
         <title>Dublin Tour</title>
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Mate&family=Tajawal&display=swap" rel="stylesheet">
         <style>
             h1 {
                 text-align: center;
+                font-family: 'Mate', sans-serif;
             }
 
             .viewer {
@@ -19,6 +23,14 @@
                
                 padding: 20px;
                 max-width: 50%;
+                color: #fee46d;
+            }
+            p {
+                font-family: 'Tajawal', sans-serif;
+
+            }
+            h3 {
+                font-family: 'Cinzel Decorative', cursive;
             }
             .module {
                 margin: 5%;
@@ -32,14 +44,47 @@
             .modObj {
                 display: flex;
             }
+            body {
+                background-color: #003e29;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: block;
+                overflow: hidden;
+            }
+            li {
+                float: right;
+                display: inline;
+                
+            }
+
+            a {
+                display: inline;
+                padding: 8px;
+                background-color: white;
+            }
+            #navbar {
+                width: 100%;
+                min-height: 2vw;
+                border: 1px solid salmon;
+                background-color: white;
+            }
 
         </style>
     </head>
     <body>
         <header>
-            <section>
-                <h1>Tentative Model Viewer Demo</h1>
-            </section>
+            <div id="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.asp">News</a></li>
+                    <li><a href="contact.asp">Contact</a></li>
+                    <li><a href="about.asp">About</a></li>
+                </ul>
+            </div>
 
 
         </header>
@@ -50,7 +95,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec feugiat in fermentum posuere urna. Quis imperdiet massa tincidunt nunc pulvinar sapien. Ultrices sagittis orci a scelerisque purus semper eget duis. Amet volutpat consequat mauris nunc congue. Faucibus et molestie ac feugiat sed lectus vestibulum mattis. Nisi est sit amet facilisis magna etiam. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Quis eleifend quam adipiscing vitae. Placerat vestibulum lectus mauris ultrices eros. Nunc id cursus metus aliquam eleifend. Neque volutpat ac tincidunt vitae semper quis lectus. Odio pellentesque diam volutpat commodo sed egestas egestas fringilla. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Non pulvinar neque laoreet suspendisse interdum consectetur. Blandit aliquam etiam erat velit. Nulla aliquet enim tortor at auctor urna nunc id. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci. Elementum tempus egestas sed sed risus pretium quam vulputate.</p>
                 </div>
                 <div class="modObj">
-                    <model-viewer class="viewer" alt="Croppy's Acre Statue" src="it_4610/Assets/bernardo.glb" ar ar-modes="webxr scene-viewer quick-look" poster="shared-assets/models/NeilArmstrong.webp" seamless-poster shadow-intensity="1" camera-controls enable-pan></model-viewer>
+                    <model-viewer class="viewer" alt="Croppy's Acre Statue" src="/glbTests/drive-download-20220702T210359Z-001/bernardo.glb" ar ar-modes="webxr scene-viewer quick-look" poster="shared-assets/models/NeilArmstrong.webp" seamless-poster shadow-intensity="1" camera-controls enable-pan></model-viewer>
                 </div>
             </div>
 
@@ -61,7 +106,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec feugiat in fermentum posuere urna. Quis imperdiet massa tincidunt nunc pulvinar sapien. Ultrices sagittis orci a scelerisque purus semper eget duis. Amet volutpat consequat mauris nunc congue. Faucibus et molestie ac feugiat sed lectus vestibulum mattis. Nisi est sit amet facilisis magna etiam. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Quis eleifend quam adipiscing vitae. Placerat vestibulum lectus mauris ultrices eros. Nunc id cursus metus aliquam eleifend. Neque volutpat ac tincidunt vitae semper quis lectus. Odio pellentesque diam volutpat commodo sed egestas egestas fringilla. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Non pulvinar neque laoreet suspendisse interdum consectetur. Blandit aliquam etiam erat velit. Nulla aliquet enim tortor at auctor urna nunc id. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci. Elementum tempus egestas sed sed risus pretium quam vulputate.</p>
                 </div>
                 <div class="modObj">
-                    <model-viewer class="viewer" alt="Croppy's Acre Statue" src="/it_4610/Assets/bernardo.glb" ar ar-modes="webxr scene-viewer quick-look" poster="shared-assets/models/NeilArmstrong.webp" seamless-poster shadow-intensity="1" camera-controls enable-pan></model-viewer>
+                    <model-viewer class="viewer" alt="Croppy's Acre Statue" src="/glbTests/drive-download-20220702T210359Z-001/bernardo.glb" ar ar-modes="webxr scene-viewer quick-look" poster="shared-assets/models/NeilArmstrong.webp" seamless-poster shadow-intensity="1" camera-controls enable-pan></model-viewer>
                 </div>
             </div>
 
