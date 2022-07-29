@@ -73,12 +73,20 @@ li a:hover {
 }
 
 #intro {
-    margin 100px;
+    margin: 0 auto;
+
 
 }
 
-#intro.h2 {
-    color: white;
+#intro h3,#intro p{
+    text-align: center;
+
+}
+
+#intro iframe {
+    display: inline;
+    margin: 70px;
+    
 
 }
 
